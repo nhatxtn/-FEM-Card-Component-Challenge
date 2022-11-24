@@ -1,0 +1,84 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.main-card {
+  width: 40%;
+  margin-top: 10%;
+}
+.card-img-desktop {
+  width: 50%;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.org-price {
+  position: relative;
+  top: -1.5px;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 10px;
+  vertical-align: super;
+}
+.price-text {
+  display: inline-block;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+.image-desktop > p {
+  font-size: 14px;
+  font-family: Montserrat;
+}
+.image-desktop {
+  background-color: white;
+  border-radius: 10px;
+}
+.top-text {
+  letter-spacing: 4px;
+}
+.card-body {
+  margin-left: 350px;
+  height: 450px;
+}
+.btn {
+  display: table-cell;
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+h1 {
+  font-family: Fraunces;
+}
+@media screen and (min-width: 1440px) {
+  .card-img-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .card-img-desktop {
+    display: none;
+  }
+  .card-body {
+    display: block;
+    margin: 0;
+    background-color: white;
+    height: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card-img-mobile {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .image-desktop {
+    position: relative;
+    width: 100%;
+  }
+}
